@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Stylesheet -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a73aa1d1f9.css" crossorigin="anonymous">
+    <!-- Tailwind Css use:'npm run dev to activate always' on the terminal-->
+    <link rel="stylesheet" href="Tailwind--starter/dist/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Fav Icon -->
+    <link rel="icon" type="image/x-icon" href="vaicon.ico">
+    <title>VULKAR AUTO</title>
+</head>
+<body>
+  
+<!-- Navbar Fixed -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark nvbr">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Frame 2VA.png" alt="" width="50" height="32" class="d-inline-block align-text-top img-fluid">
+        Vulkar Auto
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Car Brands
+            </button>
+            <ul class="dropdown-menu">
+              <li><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></li>
+              <li><a class="dropdown-item" href="#">Toyota</a></li>
+              <li><a class="dropdown-item" href="#">Mercedes</a></li>
+              <li><a class="dropdown-item" href="#">Ford</a></li>
+              <li><a class="dropdown-item" href="#">load More</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Auto Repair & Maintainance</a></li>
+            </ul>
+          </div>
+        <form class="d-flex">
+          <button class="btn btn-outline-danger" type="submit"><a href="#">Sign in</a></button>
+          <button class="btn btn-outline-danger" type="submit"><a href="#">Sign up</a></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End-->
+  <div class="b-example-divider"></div>
+
+  <!-- Coursel Start-->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="subaru.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                  <h1>All new 2022  Subaru BRZ</h1>
+                <p> Highs Raw driving experience, surprising practicality, affordable to almost everyone</p>
+                <p><a class="btn btn-lg btn-danger" href="#">More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="camry1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>2018 Toyota Camry</h1>
+                <p>Check out one of our best seller</p>
+                <p><a class="btn btn-lg btn-danger" href="#">More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="valer.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></img>
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Range Rover Valer 2021</h1>
+                <p>Looking for some luxury?</p>
+                <p><a class="btn btn-lg btn-danger" href="#">more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Coursel End-->
+  
+<!-- About Section start-->
+<div
+  class="bg-image d-flex justify-content-center align-items-center"
+  style="
+    background-image: url('cars.jpg');
+    height: 100vh;
+  "
+>
+<div class="col-lg-6 col-md-8 mx-auto text-white">
+  <h1 class="fw-light fs-1">About Us</h1>
+  <p class="fs-3">
+    Welcome to our auto dealership and maintainance website!
+  </p>
+  <p class="fs-5">
+    We are a premier dealership and auto repair center committed to providing exceptional customer service and high-quality 
+    vehicles to drivers in our community. With years of experience in the automotive industry, our team of professionals is 
+    dedicated to helping you find the perfect car, truck, or SUV to fit your lifestyle and budget.
+  </p>
+</div>
+</div>
+<p class="createspace">uh <br> gh</p>
+<!-- About Section end-->
+<div class="b-example-divider"></div>
+
+    <!-- Tabs navs: Search by Start -->
+    <nav>
+      <div class="nav nav-tabs searchby" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Type</button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Brands</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Year</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+
+      <!-- Year Category Start-->
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="container px-4 px-md-5 mt-5">
+        <div class="row gx-4 gx-md-5 row-cols-2 row-cols-md-4 row-cols-xl-4 justify-content-center">
+          <!--Sedan start-->
+          <div class="col mb-5">
+            <div class="card h-100 bg-secondary">
+              <!-- Product Img-->
+              <img src="sedan.jpg" alt="" class="card-img-top">
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name -->
+                  <h5 class="fw-bolder"></h5>
+                </div>
+              </div>
+              <!-- Product Button -->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><a href="#" class="btn btn-outline-danger mt-auto">Sedan</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Sedan end -->
+          <!--SUV start-->
+          <div class="col mb-5">
+            <div class="card h-100 bg-secondary">
+              <!-- Product Img-->
+              <img src="suv.jpg" alt="" class="card-img-top">
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name -->
+                  <h5 class="fw-bolder"></h5>
+                </div>
+              </div>
+              <!-- Product Button -->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><a href="#" class="btn btn-outline-danger mt-auto">SUV</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- SUV end -->
+          <!--Pickup start-->
+          <div class="col mb-5">
+            <div class="card h-100 bg-secondary">
+              <!-- Product Img-->
+              <img src="pickup.jpg" alt="" class="card-img-top">
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name -->
+                  <h5 class="fw-bolder"></h5>
+                </div>
+              </div>
+              <!-- Product Button -->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><a href="#" class="btn btn-outline-danger mt-auto">Pickup</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Pickup end -->
+          <!--Crossover start-->
+          <div class="col mb-5">
+            <div class="card h-100 bg-secondary">
+              <!-- Product Img-->
+              <img src="crossover.jpg" alt="" class="card-img-top">
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name -->
+                  <h5 class="fw-bolder"></h5>
+                </div>
+              </div>
+              <!-- Product Button -->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><a href="#" class="btn btn-outline-danger mt-auto">Crossover</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- Crossover end -->
+
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+    </div>
+    <!-- Type Category End-->
+    
+    <!-- Brand Category start-->
+      
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="container">
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="lexuslogo.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-toyota-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-bmw-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-ford-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-honda-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-hyundai-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-subaru-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-dodge-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-land-rover-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-kia-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-mazda-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-nissan-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-peugeot-is-a-french-automotive-manufacturer,-part-of-groupe-psa-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-volkswagen-100.png" alt=""></div>
+            </div>
+            <div class="col">
+              <div class="p-5 border bg-light"><img src="icons8-chevrolet-100.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Brand Category end-->
+      
+      <!-- Year Category start-->
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+        
+        <div class="col">
+          <div class="p-5 border bg-light">
+            <a href="#">2000-2003</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="p-5 border bg-light">
+            <a href="#">2004-2007</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="p-5 border bg-light">
+            <a href="#">2008-2011</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="p-5 border bg-light">
+            <a href="#">2012-2015</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="p-5 border bg-light">
+            <a href="#">2016-2019</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="p-5 border bg-light">
+            <a href="#">2020-2023</a>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Year Category end-->
+    </div>
+    <p class="createspace">uh <br> gh</p>
+    <!-- Tabs navs: Search by End -->
+
+    
+
+
+
+    <!-- Review start -->
+    <section style="color: #000; background-color: #6c757d;">
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h3 class="fw-bold mb-4">Reviews</h3>
+            <p class="mb-4 pb-2 mb-md-5 pb-m0">
+              Car enthusiasts know that choosing the right vehicle can be a challenging task, 
+              with so many options available in the market. That's why it's essential to have 
+              access to reliable and informative reviews that can help you make an informed decision.
+            </p>
+          </div>
+        </div>
+    
+        <div class="row text-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card">
+              <div class="card-body py-4 mt-2">
+                <div class="d-flex justify-content-center mb-4">
+                  <img src="manc.jpg"
+                    class="rounded-circle shadow-1-strong" width="100" height="100" />
+                </div>
+                <h1 class="card_title">Henry Coman</h1>
+                <p class="mb-2">
+                  <i class="fas fa-quote-left pe-2"></i>I recently purchased a car from Vulkar Auto Dealership, 
+                  and I couldn't be happier with my experience. From the moment I walked in, I felt welcomed and 
+                  appreciated by the staff. They took the time to understand my needs and helped me find the perfect car for me. The whole process was smooth, transparent, and stress-free. The staff was knowledgeable and patient, and they went above and beyond to make sure I was satisfied with my purchase. 
+                  I highly recommend Vulkar Auto Dealership to anyone in the market for a new car.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center">
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star-half-alt fa-sm text-info"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card">
+              <div class="card-body py-4 mt-2">
+                <div class="d-flex justify-content-center mb-4">
+                  <img src="womanc.jpg"
+                    class="rounded-circle shadow-1-strong" width="100" height="100" />
+                </div>
+                <h1 class="card_title">Damilola Gbemi</h1>
+                  <p class="mb-2">
+                    <i class="fas fa-quote-left pe-2"></i>
+                    I've been a loyal customer of Vulkar auto Dealership for years, and they never disappoint. 
+                    The staff is friendly, knowledgeable, and honest, and they always prioritize my needs 
+                    and preferences. They offer a wide selection of cars at competitive prices, and they 
+                    work with me to find the best financing options. The service department is also excellent, 
+                    and they take care of my car's maintenance and repairs efficiently and professionally. 
+                    I highly recommend Vulkar auto Dealership to anyone looking for a reliable and trustworthy dealership.
+                  </p>
+                <ul class="list-unstyled d-flex justify-content-center">  
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-0">
+            <div class="card">
+              <div class="card-body py-4 mt-2">
+                <div class="d-flex justify-content-center mb-4">
+                  <img src="manc2.jpg"
+                    class="rounded-circle shadow-1-strong" width="100" height="100" />
+                </div>
+                <h1 class="card_title">Kunle Davis</h1>
+                <p class="mb-2">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  I recently purchased a car from Vulkar Auto Dealership, and I must say that the experience exceeded 
+                  my expectations. The staff was incredibly helpful and attentive, and they listened carefully to 
+                  my needs and preferences. They helped me find the perfect car within my budget, and I never felt 
+                  pressured or rushed throughout the process. The staff was knowledgeable and transparent, and they 
+                  went above and beyond to ensure that I was satisfied with my purchase. I'm grateful for the excellent 
+                  service and friendly atmosphere at Vulkar Auto Dealership, and I highly recommend them to anyone looking for a stress-free and enjoyable car-buying experience.
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center">
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="fas fa-star fa-sm text-info"></i>
+                  </li>
+                  <li>
+                    <i class="far fa-star fa-sm text-info"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Review end -->
+    <div class="b-example-divider"></div>
+
+    <!-- Services start-->
+
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="fw-bold mb-4 text-center">Services</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 contain">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <img src="buy.png"></img>
+          </div>
+          <div>
+            <h2>Buy Car</h2>
+            <p>Need a car? <br>We buy cars from all over the world and provide them with a safe, friendly environment to live in until they're ready for their new owners.</p>
+            <a href="#" class="btn btn-danger">
+              More
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <img src="trade.png"></img>
+          </div>
+          <div>
+            <h2>Sell Car</h2>
+            <p>Looking for a buyer? <br>Sell your car hassle-free with our dealership. We offer competitive prices and a streamlined process to make selling your car quick and easy.</p>
+            <a href="#" class="btn btn-danger">
+              More
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <img src="maintenance.png"></img>
+          </div>
+          <div>
+            <h2>Repair & Maintainance</h2>
+            <p>Need a tune?<br>Trust our expert technicians for top-notch repair and maintenance services for your vehicle. Keep your car running smoothly and safely with us.</p>
+            <a href="#" class="btn btn-danger">
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="b-example-divider"></div>
+    <!-- Services end-->
+    
+
+    <!-- Accordion start-->
+    <h3 class="fw-bold mb-4 mt-2 pt-2 text-center">FAQs</h3>
+    <p class="text-white">k <br>g</p>
+    <div class="accordion accordion-flush p-3 mb-2 bg-secondary text-white" id="accordionFlushExample">
+      <div class="accordion-item p-3 mb-2 bg-secondary text-white">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed p-3 mb-2 bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+           Popular new cars
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse p-3 mb-2 bg-secondary text-white" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Popular cars are popular for a reason, and it's no surprise that they continue to dominate the market. These cars offer a perfect blend of reliability, affordability, and practicality, 
+            making them ideal for a wide range of drivers. Whether you're a family in need of a spacious SUV or a commuter looking for a fuel-efficient sedan, popular cars have something to offer for everyone. Some of the 
+            most popular cars on the market today include the Toyota Camry, Honda Accord, Toyota Corolla, and Subaru Outback. These cars have proven to be reliable, efficient, and safe, and they continue to be a top choice for 
+            many drivers. If you're in the market for a new car, you can't go wrong with a popular car.</div>
+        </div>
+      </div>
+    </div>
+      <div class="accordion-item p-3 mb-2 bg-secondary text-white">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed p-3 mb-2 bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+           Popular used cars
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse p-3 mb-2 bg-secondary text-white" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Popular used cars offer a perfect combination of affordability and reliability, making them an attractive option for many drivers. These cars have stood the test of time and have proven to be 
+            durable and efficient, making them a popular choice in the used car market. Some of the most popular used cars include the Honda Civic, Toyota Corolla, Ford Focus, and Mazda3. These cars offer excellent fuel economy, spacious interiors, 
+            and reliable performance, making them ideal for commuters, families, and anyone on a budget. Additionally, many popular used cars come with advanced safety features, such as airbags, antilock brakes, and electronic stability control, 
+            providing peace of mind for drivers and their passengers. Whether you're in the market for your first car or looking for a reliable second car, popular used cars offer a fantastic value for your money.
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="accordion-item p-3 mb-2 bg-secondary text-white">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed p-3 mb-2 bg-secondary text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+           Best cars of 2022
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse p-3 mb-2 bg-secondary text-white" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">As we head into 2022, the automotive industry continues to innovate and push the boundaries of what's possible in the world of cars. From electric vehicles to advanced safety features, the best cars of 2022 
+            offer a range of exciting features and capabilities that make them stand out from the rest.
+            These vehicles offer stunning performance, advanced technology, and sleek designs that are sure to turn heads. Additionally, the new 2022 models of popular cars like the Kia K5, Toyota Highlander, and Hyundai Sonata have been updated
+            with new features, enhanced designs, and improved performance. These cars offer the perfect blend of reliability, affordability, and practicality that make them a popular choice among drivers. No matter what your preferences are, the best cars of 2022 offer 
+            something for everyone, and they're sure to make a lasting impression on the automotive industry. 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Accordion end-->
+    
+
+    
+    
+</body>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Find us on social media:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="me-3 text-secondary" src="vaicon.ico"></i>Vulkar Auto
+          </h6>
+          <p>
+            At our dealership, you can choose from a wide selection of new and pre-owned 
+            vehicles from top brands like Toyota, Honda, Ford, and many more.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Services
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Buy car</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Sell car</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Repair & Maintainance</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Order</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Register</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> Lagos, LG 2112, NG</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            vulakrautoltd@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +2345678863846</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> +2345678937946</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="">Vulkar Auto Ltd.</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/a73aa1d1f9.js" crossorigin="anonymous"></script>
+</html>
